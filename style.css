@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  text-align: center;
+}
+
+header {
+  padding: 1em;
+}
+
+h1:nth-of-type(1) {
+  color: #a3a5ae;
+  font-weight: inherit;
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+h1:nth-of-type(2) {
+  font-weight: 400;
+  font-size: 26px;
+  margin-top: 0;
+}
+
+h5 {
+  font-weight: inherit;
+  max-width: 45vw;
+  margin: 0 auto;
+  font-size: 17px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+article {
+  width: 310px;
+  height: 310px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 2em;
+  margin: 1em 1em 2em;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  position: relative;
+}
+
+article:nth-of-type(1) {
+  border-top: 5px solid #45d3d3;
+}
+
+article:nth-of-type(2) {
+  border-top: 5px solid #549ef2;
+}
+
+div > article:nth-of-type(1) {
+  border-top: 5px solid #ea5353;
+}
+
+div > article:nth-of-type(2) {
+  border-top: 5px solid #fcaf4a;
+}
+
+article div:nth-of-type(2) {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+article:nth-of-type(1) div:nth-of-type(2) {
+  background-image: url("./images/icon-supervisor.svg");
+}
+
+article:nth-of-type(2) div:nth-of-type(2) {
+  background-image: url("./images/icon-calculator.svg");
+}
+
+div > article:nth-of-type(1) div:nth-of-type(2) {
+  background-image: url("./images/icon-team-builder.svg");
+}
+
+div > article:nth-of-type(2) div:nth-of-type(2) {
+  background-image: url("./images/icon-karma.svg");
+}
+
+@media (max-width: 375px) {
+  h5 {
+    font-size: 11px;
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

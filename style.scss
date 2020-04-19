@@ -1,0 +1,104 @@
+@import "./styles/settings.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $poppins;
+    font-size: $base-font-size;
+    font-weight: $normal-font;
+    text-align: center;
+}
+
+header {
+    padding: 1em;
+}
+
+h1:nth-of-type(1) {
+    color: $base-font-color;
+    font-weight: inherit;
+    font-size: $title-font-size;
+    margin-bottom: 0;
+}
+
+h1:nth-of-type(2) {
+    font-weight: $bold-font;
+    font-size: $title-font-size;
+    margin-top: 0;
+}
+
+h5 {
+    font-weight: inherit;
+    max-width: 45vw;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 310px;
+    height: 310px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 2em;
+    margin: 1em 1em 2em;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 4px 4px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    position: relative;
+}
+
+article:nth-of-type(1) {
+    border-top: 5px solid $cyan;
+}
+
+article:nth-of-type(2) {
+    border-top: 5px solid $blue;
+}
+
+div > article:nth-of-type(1) {
+    border-top: 5px solid $red;
+}
+
+div > article:nth-of-type(2) {
+    border-top: 5px solid $orange;
+}
+
+article div:nth-of-type(2) {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+article:nth-of-type(1) div:nth-of-type(2) {
+    background-image: url("./images/icon-supervisor.svg");
+}
+
+article:nth-of-type(2) div:nth-of-type(2) {
+    background-image: url("./images/icon-calculator.svg");
+}
+
+div > article:nth-of-type(1) div:nth-of-type(2) {
+    background-image: url("./images/icon-team-builder.svg");
+}
+
+div > article:nth-of-type(2) div:nth-of-type(2) {
+    background-image: url("./images/icon-karma.svg");
+}
+
+@media (max-width: 375px) {
+    h5 {
+        font-size: $mobile-font-size;
+        max-width: 100%;
+    }
+}
