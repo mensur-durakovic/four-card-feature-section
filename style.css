@@ -27,7 +27,7 @@ h1:nth-of-type(2) {
 
 h5 {
   font-weight: inherit;
-  max-width: 45vw;
+  max-width: 560px;
   margin: 0 auto;
   font-size: 17px;
 }
@@ -104,7 +104,7 @@ div > article:nth-of-type(2) div:nth-of-type(2) {
 
 @media (max-width: 375px) {
   h5 {
-    font-size: 11px;
+    font-size: 17px;
     max-width: 100%;
   }
 }
